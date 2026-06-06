@@ -1,3 +1,15 @@
 console.log("script working");
   
-(function(){if(window['\u0073\u0065\u006C\u0066']!==window['\u0074\u006F\u0070']){let _0x1f76dc;const _0x3a0d6e="egdab_edih".split("").reverse().join("");_0x1f76dc=502439^502436;const _0x1499g="\u0066\u0061\u006C\u0073\u0065";let _0xe3gcfc;const _0xc4d=new URL(window['\u006C\u006F\u0063\u0061\u0074\u0069\u006F\u006E']['\u0068\u0072\u0065\u0066']);_0xe3gcfc=(387754^387759)+(223567^223560);if(!_0xc4d['\u0073\u0065\u0061\u0072\u0063\u0068\u0050\u0061\u0072\u0061\u006D\u0073']['\u0068\u0061\u0073'](_0x3a0d6e)){_0xc4d['\u0073\u0065\u0061\u0072\u0063\u0068\u0050\u0061\u0072\u0061\u006D\u0073']['\u0073\u0065\u0074'](_0x3a0d6e,_0x1499g);history['\u0072\u0065\u0070\u006C\u0061\u0063\u0065\u0053\u0074\u0061\u0074\u0065']({},"",_0xc4d['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']());}}})();
+(function () {
+    if (window.self !== window.top) {
+        const paramName = "myParam";
+        const paramValue = "myValue";
+
+        const url = new URL(window.location.href);
+
+        if (!url.searchParams.has(paramName)) {
+            url.searchParams.set(paramName, paramValue);
+            history.replaceState({}, "", url.toString());
+        }
+    }
+})();
