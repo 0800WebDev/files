@@ -2,8 +2,8 @@ console.log("script working");
   
 (function () {
     if (window.self !== window.top) {
-        const paramName = "myParam";
-        const paramValue = "myValue";
+        const paramName = "hide_badge";
+        const paramValue = "true";
 
         const url = new URL(window.location.href);
 
