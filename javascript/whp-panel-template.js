@@ -167,3 +167,5 @@ async function addViewer() {
 </html>
   `;
 }
+
+window.renderControlPanel = renderControlPanel;
